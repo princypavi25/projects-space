@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Web Designer Portfolio</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #333;
+      --accent: #00bcd4;
+      --section-bg: #f5f5f5;
+    }
+
+    body.dark {
+      --bg: #1e1e1e;
+      --text: #f0f0f0;
+      --accent: #03dac6;
+      --section-bg: #2c2c2c;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .toggle-btn {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      padding: 0.4rem 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 0.9rem;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+      background-color: var(--section-bg);
+      border-radius: 10px;
+      margin-top: 2rem;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+
+    .hero-text {
+      flex: 1 1 50%;
+    }
+
+    .hero-text h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero-text p {
+      font-size: 1.2rem;
+    }
+
+    .hero-img {
+      flex: 1 1 40%;
+      text-align: center;
+    }
+
+    .hero-img img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid var(--accent);
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .design-style {
+      font-size: 1.1rem;
+      margin-top: 1rem;
+      background:#00bcd4;
+      padding: 1rem;
+      border-left: 5px solid var(--accent);
+    }
+
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .catchy-line {
+      font-style: italic;
+      font-size: 1.2rem;
+      text-align: center;
+      margin-top: 2rem;
+      color: var(--accent);
+    }
+
+
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #222;
+      color: #fff;
+    }
+
+    #scrollTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      padding: 10px 14px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      font-size: 18px;
+      z-index: 999;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-img img {
+        width: 180px;
+        height: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>My Portfolio</h2>
+    <div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#tools">Tools</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+    <button class="toggle-btn" onclick="toggleDarkMode()">🌙</button>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Hello, I'm pavithra  (Web Designer)</h1>
+      <p>I create clean, simple, and responsive websites using HTML, CSS, and JavaScript.</p>
+      <div class="catchy-line">“Let’s build something beautiful together!”</div>
+    </div>
+    <div class="hero-img">
+      <img src="IMG2.jpg" alt="My Photo" />
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m a passionate web designer who enjoys crafting attractive and functional websites. I build responsive designs that work smoothly across all devices. Always learning, always designing.</p>
+
+    <h3 style="margin-top: 2rem;">📘 My Education</h3>
+    <ul>
+      <li><strong>B.E. - Electrical and Electronics Engineering</strong></li>
+      <li>Graduated from  RVS PADMAVATHY COLLEGE OF ENGINEERING, CHENNAI</li>
+      <li>2022</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>My Skills</h2>
+    <ul>
+      <li>HTML</li>
+     <li>CSS3</li>
+      <li>Responsive Web Design</li>
+      <li>Basic JavaScript</li>
+
+    </ul>
+  </section>
+
+  <section id="tools">
+    <h2>🛠 Tools I Use</h2>
+    <ul>
+      <li>Visual Studio Code</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>💡 My Design Style</h2>
+    <div class="design-style">
+      Clean | Minimal | User-focused | Easy Navigation
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:yourname@example.com">pavithrababu2529@gmailcom</a></p>
+    <p>Phone: +91-9361672527</p>
+    <p>Portfolio: <a href="https://github.com/princypavi25/projects-space" target="_blank">View Live</a></p>
+    
+  </section>
+
+  <footer>
+    <p>© 2025 PAVITHRA. All rights reserved.</p>
+  </footer>
+
+  <button id="scrollTop" onclick="scrollToTop()">↑</button>
+
+  <script>
+    // Dark mode toggle
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark");
+    }
+
+    // Scroll to top
+    const scrollTopBtn = document.getElementById("scrollTop");
+    window.onscroll = () => {
+      scrollTopBtn.style.display = window.scrollY > 200 ? "block" : "none";
+    };
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+   
+  </script>
+
+</body>
+</html>
