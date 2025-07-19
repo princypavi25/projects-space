@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Register</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Register for Courses</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="about.html">About</a>
+      <a href="register.html">Register</a>
+    </nav>
+  </header>
+
+  <section class="form-section">
+    <form id="registerForm">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required />
+
+      <label for="course">Select Course:</label>
+      <select id="course" required>
+        <option value="">--Select--</option>
+        <option>Web Development</option>
+        <option>Data Science</option>
+        <option>Electrical Engineering</option>
+        <option>Java Full Stack</option>
+      </select>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" required minlength="6"/>
+
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" id="confirmPassword" required />
+
+      <button type="submit">Register</button>
+      <p id="message"></p>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
