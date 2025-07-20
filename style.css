@@ -254,3 +254,63 @@ button {
   font-size: 16px;
   color: #333;
 }
+.site-footer {
+  background-color: #003366;
+  color: #fff;
+  padding: 40px 20px 20px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: left;
+  max-width: 1100px;
+  margin: auto;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.footer-content div {
+  flex: 1 1 250px;
+  margin: 10px;
+}
+
+.footer-content h3,
+.footer-content h4 {
+  color: #ffd700;
+  margin-bottom: 10px;
+}
+
+.footer-content a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+
+.social-icons a img {
+  width: 24px;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #ccc;
+}
+
+/* Animation */
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
